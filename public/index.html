@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentiment Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <button id="newInputButton">New Input</button>
+      <h3>Saved Inputs</h3>
+      <h5>Click on a saved input to use it again!</h5>
+      <ul id="inputList"></ul>
+      <button id="deleteAllButton">Delete All</button>
+    </div>
+    <div class="main-content">
+      <h1>Sentiment Analysis</h1>
+      <textarea id="inputText" rows="4" cols="50" placeholder="Enter text here..."></textarea>
+      <br>
+      <button id="analyzeButton">Analyze Sentiment</button>
+      <button id="saveButton">Save this Input!</button>
+      <div id="results"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
