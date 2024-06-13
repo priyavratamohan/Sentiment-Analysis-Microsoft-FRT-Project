@@ -51,9 +51,6 @@ body {
     transform: translateY(-50%);
     display: none;
   }
-  .sidebar li:hover button {
-    display: inline-block;
-  }
   .main-content {
     flex-grow: 1;
     padding: 20px;
