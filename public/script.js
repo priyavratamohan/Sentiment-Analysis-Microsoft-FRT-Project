@@ -5,7 +5,7 @@ const newInputButton = document.getElementById('newInputButton');
     const inputText = document.getElementById('inputText');
     const resultsDiv = document.getElementById('results');
 
-    // Fetch and display the last 5 inputs
+    // Fetch and display the saved inputs
     async function fetchInputs() {
       const response = await fetch('/inputs');
       const inputs = await response.json();
@@ -37,9 +37,10 @@ const newInputButton = document.getElementById('newInputButton');
         inputList.appendChild(li);
       });
     }
-
+    
     newInputButton.addEventListener('click', async () => {
         document.getElementById("inputText").value="";
+        resultsDiv.innerHTML = "";
         alert("Text area is cleared, you can add you new input now!");
         fetchInputs();
     });
